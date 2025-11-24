@@ -31,22 +31,22 @@ function About() {
       <strong className="purple"> My Journey in Pictures</strong>
     </h1>
 
-    <div className="journey-gallery">
-      {[
-        "/images/gfg1.jpeg",
-        "/images/gfg2.jpeg",
-        "/images/gfg3.jpeg",
-        "/images/gfg4.jpeg", 
-        "/images/gfg5.jpeg",
-        "/images/gfg6.jpeg",
-        "/images/gfg7.jpeg",
-        "/images/gfg9.jpeg"
-      ].map((img, index) => (
-        <div key={index} className="journey-card">
-          <img src={img} alt="journey" className="journey-img" />
-        </div>
-      ))}
+   <div className="journey-gallery">
+  {[
+    process.env.PUBLIC_URL + "/images/gfg1.jpeg",
+    process.env.PUBLIC_URL + "/images/gfg2.jpeg",
+    process.env.PUBLIC_URL + "/images/gfg3.jpeg",
+    process.env.PUBLIC_URL + "/images/gfg4.jpeg",
+    process.env.PUBLIC_URL + "/images/gfg5.jpeg",
+    process.env.PUBLIC_URL + "/images/gfg6.jpeg",
+    process.env.PUBLIC_URL + "/images/gfg7.jpeg",
+    process.env.PUBLIC_URL + "/images/gfg9.jpeg"
+  ].map((img, index) => (
+    <div key={index} className="journey-card">
+      <img src={img} alt="journey" className="journey-img" />
     </div>
+  ))}
+</div>
   </Col>
 </Row>
         </Row>

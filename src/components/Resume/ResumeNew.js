@@ -12,28 +12,27 @@ function ResumeNew() {
               <p>
                 I’m a third-year IT student building sharp, scalable, AI-powered
                 solutions across data analytics, advanced web development, and
-                DSA. The resume includes my internships, projects, and
-                contributions — click to view or download.
+                DSA. Click below to view or download my resume.
               </p>
             </div>
 
             <div className="actions">
-              <Button
-                variant="outline-light"
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View
-              </Button>
+             <Button
+  variant="outline-light"
+  href={process.env.PUBLIC_URL + "/resume.pdf"}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View
+</Button>
 
-              <Button
-                variant="primary"
-                href="/resume.pdf"
-                download
-              >
-                Download
-              </Button>
+<Button
+  variant="primary"
+  href={process.env.PUBLIC_URL + "/resume.pdf"}
+  download
+>
+  Download
+</Button>
             </div>
           </div>
         </Col>
